@@ -1,27 +1,63 @@
-# LearnAng
+## 1. counter Component
+Used different ways of binding in Angular. Interpolation and event binding.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+## 2. wish-message Component
+Used event binding to change wish message.
 
-## Development server
+## 3. product-item Component
+Created one product item. We can change the amount of products pushing '-' and '+' that also counts total value price * amount.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 4. shopping-cart Component
+Used built-in structural directive *ngFor to loop the array of product items.
 
-## Code scaffolding
+## 5. change-username Component
+Created Input form. Binded input data with text field using our own function updateInput().
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 6. change-username-auto Component
+Used ngModel attribute directive for two-way binding.
 
-## Build
+## 7. sms Component
+Component contains textarea to write a message. Used two-way binding to bind textarea with message variable.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 8. show-password Component
+Used attribute binding to switch iput type between "text" and "password".
 
-## Running unit tests
+## 9. amount-range Component
+Used input type "range" to set up the price.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 10. theme Component
+Used input type "checkbox" role "switch" to switch to Dark theme and back. We change the theme with changing classes using class binding
 
-## Running end-to-end tests
+## 11. user-register Component
+Created a registration form. 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+interface User{
+  name : string;
+  email : string;
+  password : string;
+  designation : string;
+  bio : string;
+  terms : boolean;
+}
 
-## Further help
+print to the console a new Object with Interface User from the filled registration form.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 12. auth-user Component
+Depending on isLoggedIn boolean we show 'Thank you' and Login Button or 'Welcome Alex' and Logout button. Used ngIf directive.
+
+## 13. shopping-cart-modified Component
+Comparing with shopping-cart Component, now we receive product item data from product Component.
+
+## 14. pipes Component
+Used
+- uppercase
+- titlecase
+- number
+- date
+- currency
+- json
+
+ pipes to display data the way we want
+
+## 15. user-list Component
+Created user service to get data from API (jsonplaceholder). Used subscribe method to receive data from Service to Component.
